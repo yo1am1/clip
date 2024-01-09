@@ -1,6 +1,6 @@
-import torch
 import clip
 import numpy as np
+import torch
 from PIL import Image
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -36,3 +36,4 @@ for prompt in prompts:
 
     print("Predicted label:", predicted_label, f"({class_labels[predicted_label]})")
     print()
+   
